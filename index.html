@@ -1,10 +1,4 @@
-#pragma once
-// Served by the clock at http://alarmclock.local/  (same wifi network only).
-// Converts any picture to a 128x64 1-bit bitmap (1024 bytes) in your browser, then either
-// uploads it to the clock or downloads the .bin file (e.g. to push to your GitHub repo
-// for remote delivery). If you "Save page as..." in your browser, the download button
-// works from anywhere, with no clock needed.
-const char PAGE_HTML[] PROGMEM = R"rawliteral(<!doctype html><html><head><meta charset=utf-8>
+<!doctype html><html><head><meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1"><title>Alarm clock images</title>
 <style>body{font-family:sans-serif;max-width:520px;margin:12px auto;padding:0 12px}
 canvas{width:100%;image-rendering:pixelated;background:#000;border:1px solid #888;margin:8px 0}
@@ -144,4 +138,4 @@ async function upSnd(){
   ls();
 }
 ls();
-</script></body></html>)rawliteral";
+</script></body></html>
